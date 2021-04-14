@@ -8,7 +8,7 @@ import { OtpPageRoutingModule } from './otp-routing.module';
 
 import { OtpPage } from './otp.page';
 
-import { NgOtpInputModule } from  'ng-otp-input';
+import { NgOtpInputModule } from  'ng-otp-input';      // install using cmd->  npm i-ng-otp-input
 
 @NgModule({
   imports: [
