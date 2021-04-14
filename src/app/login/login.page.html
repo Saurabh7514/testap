@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div style="padding:4px 10px;">
+
+  <div><h4>Phone Number</h4></div>
+
+      <ion-input [(ngModel)]="phone" (keyup)="onKeyUp($event)"  maxlength="10" type="tel" placeholder="Enter Phone Number"></ion-input>
+      <p *ngIf="errorEmpty == true" style="color:brown;">Please enter phone number</p>
+      <p *ngIf="errorNum == true" style="color:brown;">Please enter only numbers</p>
+      <div style="text-align:right;"><ion-button (click)="formSubmit_login(phone)" type="submit" fill="outline" color="primary" >Next</ion-button></div>
+
+
+</div>
+</ion-content>

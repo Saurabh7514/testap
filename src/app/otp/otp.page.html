@@ -1,0 +1,37 @@
+
+<ion-content>
+  <div style="margin-top:20px;padding:10px;">
+  <h3>Validate OTP</h3>
+  <p>Please enter the one time password received at your phone number ending <span style="color:black;font-weight: bold;">{{digit}}</span></p>
+  </div>
+
+  <!-- <ion-row >
+    <ion-col>
+     <ion-input type="number" class="x" #otp1 required="true" maxLength="1" [(ngModel)] ="OTP[0]" (keyup)="otpController($event,otp2,'')">
+     </ion-input>
+     <ion-input type="number" class="x" #otp2 required="true" maxLength="1" [(ngModel)]="OTP[1]" (keyup)="otpController($event,otp3,otp1)">
+     </ion-input>
+     <ion-input type="number" class="x" #otp3 required="true" maxLength="1" [(ngModel)]="OTP[2]"  (keyup)="otpController($event,otp4,otp2)">
+     </ion-input>
+
+     <ion-input type="number" class="x" #otp4 required="true" maxLength="1" [(ngModel)]="OTP[3]"  (keyup)="otpController($event,otp5,otp3)">
+    </ion-input>
+
+    <ion-input type="number" class="x" #otp5  required="true" maxLength="1" [(ngModel)]="OTP[4]" (keyup)="otpController($event,otp6,otp4)">
+    </ion-input>
+
+    <ion-input type="number" class="x" #otp6  required="true" maxLength="1" [(ngModel)]="OTP[5]" (keyup)="otpController($event,'',otp5)">
+    </ion-input>
+
+    </ion-col>
+  </ion-row> -->
+
+  <!-- <div style="text-align:right;"><ion-button (click)="gotoWelcome()" type="submit" color="primary" >Okey</ion-button></div> -->
+
+
+  <!-- Using ng-otp-input module -->
+<div style="margin:auto;text-align: center;">
+  <!-- <ng-otp-input  (onInputChange)="onOtpChange($event)"  [config]="{length:6,allowNumbersOnly:true}" ></ng-otp-input> -->
+  <ng-otp-input  (onInputChange)="onOtpChange($event)" [config]="{length:6,allowNumbersOnly:true}" ></ng-otp-input>
+</div>
+</ion-content>

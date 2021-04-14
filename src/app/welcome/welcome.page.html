@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-icon slot="end" (click)="logoutAlert()" color="danger" name="log-out"></ion-icon>
+      <ion-label><b>Welcome</b></ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+ <div style="padding:20px 20px;background: #adaead;">
+   <ion-text>Welcome <span><b>{{sessionPhone}}</b></span></ion-text>
+ </div>
+    <!-- Welcome xxxxx-xxxxx (replace xxxx with phone number used in the last option). -->
+
+    <!-- <p>{{sessionPhone}}</p> -->
+
+
+</ion-content>
